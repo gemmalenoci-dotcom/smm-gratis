@@ -131,6 +131,29 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;
 
 .barlogin{font-family:var(--font);font-size:13px;font-weight:800;color:var(--ink-900);text-decoration:none;border:2px solid var(--ink-900);border-radius:999px;padding:6px 14px;line-height:1.1;white-space:nowrap}
 .barlogin:hover{background:var(--ink-900);color:#fff}
+
+/* Kit di riconoscimento della risorsa (19/10/2026) */
+:root{--fucsia:#CD2471}
+
+.rigatop{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.timbro{font-family:'Gochi Hand',cursive;font-size:1.3rem;line-height:1;color:var(--fucsia);rotate:-4deg;border:2.5px solid var(--fucsia);border-radius:10px;padding:4px 12px 2px;white-space:nowrap;display:inline-block}
+.kit{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:22px}
+.kit .cap{font-family:'Gochi Hand',cursive;font-size:1.2rem;line-height:1.1;color:var(--fucsia);rotate:-2deg;margin-left:6px}
+.kt{position:relative;width:54px;height:54px;border-radius:15px;background:#fff;border:2px solid var(--fucsia);box-shadow:3px 4px 0 var(--fucsia);display:flex;align-items:center;justify-content:center;color:var(--fucsia);flex:none}
+.kt.grande{width:68px;height:68px;border-radius:18px}
+.kt img{width:30px;height:30px;object-fit:contain;display:block}
+.kt.grande img{width:38px;height:38px}
+.kt svg.ic{width:28px;height:28px}
+.kt.grande svg.ic{width:36px;height:36px}
+.kt.scuro{background:#2B2628;border-color:#2B2628}
+.kt.barrato{box-shadow:none;border-color:var(--line,#E4E0D9)}
+.kt.barrato img,.kt.barrato svg.ic{filter:grayscale(1);opacity:.45}
+.kt svg.x{position:absolute;left:6px;top:6px;width:calc(100% - 12px);height:calc(100% - 12px);color:var(--fucsia)}
+.voto87{display:inline-flex;align-items:baseline;gap:2px;border:3px solid var(--fucsia);border-radius:100px;padding:6px 18px;background:#fff;color:var(--fucsia);font-weight:700}
+.voto87 b{font-size:2rem;letter-spacing:-.05em;font-weight:900;color:var(--fucsia)}
+.logo-in{width:20px;height:20px;vertical-align:-4px;margin-right:6px;object-fit:contain;display:inline-block}
+.marchi{font-size:12.5px;color:var(--gray,#665E61);max-width:46em;margin:10px auto 0;line-height:1.45}
+@media(max-width:640px){.kt{width:48px;height:48px}.kt.grande{width:60px;height:60px}.kit{gap:8px}}
 </style>
 </head>
 <body>
@@ -141,10 +164,32 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;
 </div></header>
 
 <section class="hero"><div class="wrap">
-  <span class="kicker"><span class="dot"></span>Gratis per le social media manager</span>
+  <div class="rigatop"><span class="kicker"><span class="dot"></span>Gratis per le social media manager</span><span class="timbro">SMM</span></div>
   <h1><span class="sweep">Gli script che ogni SMM dovrebbe avere.</span><span class="serif">Già pronti.</span></h1>
   <p class="lead">Le parole esatte per i momenti che ti fanno sudare con i clienti: il primo contatto, la call, le obiezioni sul prezzo. Copia, personalizza, usa. Smetti di improvvisare.</p>
-  <div class="herometa"><span>4 script + 1 bonus</span><span class="sep">/</span><span>Copia e incolla</span><span class="sep">/</span><span>Dal metodo Unlike</span></div>
+  <!-- kit --><div class="kit"><span class="kt grande"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M8 2v4" />
+  <path d="M16 2v4" />
+  <rect width="18" height="18" x="3" y="4" rx="2" />
+  <path d="M3 10h18" />
+  <path d="M8 14h.01" />
+  <path d="M12 14h.01" />
+  <path d="M16 14h.01" />
+  <path d="M8 18h.01" />
+  <path d="M12 18h.01" />
+  <path d="M16 18h.01" />
+</svg></span><span class="kt"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" />
+  <path d="M2 6h4" />
+  <path d="M2 10h4" />
+  <path d="M2 14h4" />
+  <path d="M2 18h4" />
+  <path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
+</svg></span><span class="kt"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z" />
+  <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12" />
+  <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17" />
+</svg></span></div><div class="herometa"><span>4 script + 1 bonus</span><span class="sep">/</span><span>Copia e incolla</span><span class="sep">/</span><span>Dal metodo Unlike</span></div>
 </div></section>
 
 <section><div class="wrap">
